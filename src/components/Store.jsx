@@ -11,7 +11,7 @@ export const Store = () => {
       <div className='container'>
         <div className='row pt-5 ms-5 ps-2'>
           {shoes.map((shoe) => (
-            <div className='col-lg-4 my-3'>
+            <div className='col-lg-4 col-md-6 my-3'>
               <Card shoe={shoe} />
             </div>
           ))}

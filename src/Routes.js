@@ -8,7 +8,7 @@ function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path='/store/item1' component={Item} />
+        <Route path='/store/item/:id' component={Item} />
         <Route path='/store' component={Store} />
         <Route path='/' component={LandingPage} />
       </Switch>

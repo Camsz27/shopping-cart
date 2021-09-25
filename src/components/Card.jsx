@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const cardWidth = { width: '18rem', minHeight: '34rem' };
 
@@ -9,9 +10,9 @@ const Card = ({ shoe }) => {
       <div className='card-body'>
         <h5 className='card-title ft-bold fs-2'>{shoe.name}</h5>
         <h6 className='card-subtitle mb-2 fw-bold fs-5'>${shoe.price}</h6>
-        <a href='/store/item1' className='btn btn-primary'>
+        <Link to={`/store/item/${shoe.name}`} className='btn btn-primary'>
           More Info
-        </a>
+        </Link>
       </div>
     </div>
   );

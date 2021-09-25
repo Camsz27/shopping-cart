@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/LandingPage.css';
 import { Header } from './Header';
 
@@ -10,12 +11,12 @@ export const LandingPage = () => {
         <div className='row'>
           <div className='col'></div>
           <div className='col'>
-            <a
+            <Link
               className='btn btn-outline-light btn-lg position-absolute top-50 h1 py-3 px-4 ms-n4'
-              href='/store'
+              to='/store'
             >
               Shop Now
-            </a>
+            </Link>
           </div>
           <div className='col'></div>
           <div className='col'></div>
