@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from './Header';
-import shoes from '../assets/shoe1.jpeg';
+import photo from '../assets/shoe1.jpeg';
 
 const select = { width: '30%', minWidth: '120px' };
 
@@ -13,7 +13,7 @@ const Item = () => {
           <div className='row'>
             <div className='col-md-6'>
               <img
-                src={shoes}
+                src={photo}
                 className='img-fluid rounded-start'
                 alt='shoes'
               />

@@ -1,7 +1,5 @@
 .landingPage {
-  background: url('../assets/taylor-smith-FaU4g6Ojaow-unsplash.jpg');
-  background: url('../assets/1104105.jpg');
-  background: url('../assets/1103833.jpg') no-repeat;
+  background: url('../assets/landing.jpg') no-repeat;
   background-size: cover;
   background-position: left 2.2cm;
   height: 100vh;
@@ -9,8 +7,4 @@
 
 #navbarNav {
   margin-left: -5.5rem;
-}
-
-#trial {
-  background-color: beige;
 }
