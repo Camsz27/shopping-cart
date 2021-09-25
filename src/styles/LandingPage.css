@@ -5,5 +5,8 @@
   background-size: cover;
   background-position: left 2.2cm;
   height: 100vh;
-  color: #fff;
+}
+
+#navbarNav {
+  margin-left: -5.5rem;
 }

@@ -1,5 +1,11 @@
 import React from 'react';
+import { Header } from './Header';
 
 export const Store = () => {
-  return <div>This is the store</div>;
+  return (
+    <div>
+      <Header />
+      <div className='container bg-warning'></div>
+    </div>
+  );
 };
