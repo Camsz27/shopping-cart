@@ -3,7 +3,7 @@ import React from 'react';
 
 export const Header = () => {
   return (
-    <nav class='navbar navbar-expand-lg navbar-dark bg-black'>
+    <nav class='navbar navbar-expand-lg navbar-dark bg-black sticky-top'>
       <div class='container-fluid ms-3'>
         <a class='navbar-brand' href='/'>
           <svg width='66px' height='62px' viewBox='0 0 66 62' href='/'>
