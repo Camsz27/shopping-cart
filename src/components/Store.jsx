@@ -9,22 +9,22 @@ export const Store = () => {
       <Header />
       <div className='container'>
         <div className='row pt-5 ms-5 ps-2'>
-          <div className='col-4 my-3'>
+          <div className='col-md-4 my-3'>
             <Card />
           </div>
-          <div className='col-4 my-3'>
+          <div className='col-lg-4 my-3'>
             <Card />
           </div>
-          <div className='col-4 my-3'>
+          <div className='col-lg-4 my-3'>
             <Card />
           </div>
-          <div className='col-4 my-3'>
+          <div className='col-lg-4 my-3'>
             <Card />
           </div>
-          <div className='col-4 my-3'>
+          <div className='col-lg-4 my-3'>
             <Card />
           </div>
-          <div className='col-4 my-3'>
+          <div className='col-lg-4 my-3'>
             <Card />
           </div>
         </div>
