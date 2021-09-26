@@ -1,8 +1,16 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import shoes from './shoes';
+import { Popover, OverlayTrigger } from 'react-bootstrap';
 
 const shoeImage = { height: '600px' };
+
+const popover = (
+  <Popover id='popover-basic'>
+    <Popover.Header as='h3'>Item Added</Popover.Header>
+    <Popover.Body>The shoes have been added to the cart</Popover.Body>
+  </Popover>
+);
 
 const Item = ({ handler }) => {
   const { id } = useParams();
@@ -38,9 +46,21 @@ const Item = ({ handler }) => {
                 <p className='card-text'>{shoe.description}</p>
                 <p className='card-text fw-bold fs-3'>${shoe.price}</p>
                 <div className='my-4'>
-                  <button className='btn btn-dark' onClick={addToCartHandler}>
-                    Add to cart
-                  </button>
+                  <OverlayTrigger
+                    trigger='click'
+                    placement='right'
+                    overlay={popover}
+                  >
+                    <button
+                      className='btn btn-dark'
+                      onClick={addToCartHandler}
+                      data-bs-toggle='popover'
+                      title='Popover title'
+                      data-bs-content="And here's some amazing content. It's very engaging. Right?"
+                    >
+                      Add to cart
+                    </button>
+                  </OverlayTrigger>
                 </div>
               </div>
             </div>

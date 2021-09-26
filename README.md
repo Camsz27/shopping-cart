@@ -1,16 +1,16 @@
 # Memory Game
 
-A memory card game where the player gets points for every character they click without repeating.
+A shoe website where you can select and add to cart different products.
 
 ## Live Demo
 
 [Click Here](https://camsz27.github.io/shopping-cart/)
 
-![Preview of the page](/src/preview.png 'App preview')
+![Preview of the page](/src/preview.gif 'App preview')
 
 ## Description
 
-The objective of this project was to work with functional components and use hooks for the first time.
+The objective of this project was to keep practicing React and use for the first time React Router and Bootstrap.
 
 ## Built With
 
