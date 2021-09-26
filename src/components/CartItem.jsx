@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const imageStyle = { width: '150px' };
+const imageStyle = { maxWidth: '150px' };
 const select = { width: '30%', minWidth: '120px' };
 
 const CartItem = ({ item, handler }) => {
@@ -13,8 +13,8 @@ const CartItem = ({ item, handler }) => {
   };
 
   return (
-    <div className='d-flex border-2 border flex-lg-row flex-column px-3 px-md-0'>
-      <div className='me-md-4 my-3 my-md-0'>
+    <div className='d-flex border-2 border flex-lg-row flex-column px-3 px-md-0 justify-content-lg-between justify-content-center'>
+      <div className='me-lg-4 my-3 my-md-0'>
         <img
           src={item.img}
           style={imageStyle}
@@ -22,7 +22,7 @@ const CartItem = ({ item, handler }) => {
           className='img-fluid rounded-start'
         />
       </div>
-      <div className='d-flex flex-column align-items-center justify-content-center me-md-4'>
+      <div className='d-flex flex-column align-items-center justify-content-center me-lg-4'>
         <h4>{item.name}</h4>
         <select
           className='form-select form-select-m'

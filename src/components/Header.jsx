@@ -2,6 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export const Header = () => {
+  const removeActive = () => {
+    Array.from(document.querySelectorAll('nav a')).map((element) =>
+      element.classList.remove('active')
+    );
+  };
+  const changeActive = (e) => {
+    removeActive();
+    e.target.classList.add('active');
+  };
+
   return (
     <nav className='navbar navbar-expand-lg navbar-dark bg-black sticky-top'>
       <div className='container-fluid ms-3'>
@@ -26,17 +36,30 @@ export const Header = () => {
         <div className='collapse navbar-collapse ms-n6' id='navbarNav'>
           <ul className='navbar-nav mx-auto'>
             <li className='nav-item me-4'>
-              <Link className='nav-link h3 fw-bold' aria-current='page' to='/'>
+              <Link
+                className='nav-link h3 fw-bold'
+                aria-current='page'
+                to='/'
+                onClick={changeActive}
+              >
                 Home
               </Link>
             </li>
             <li className='nav-item mx-4'>
-              <Link className='nav-link h3 fw-bold' to='/store'>
+              <Link
+                className='nav-link h3 fw-bold'
+                to='/store'
+                onClick={changeActive}
+              >
                 Store
               </Link>
             </li>
             <li className='nav-item mx-4'>
-              <Link className='nav-link h3 fw-bold' to={{ pathname: '/cart' }}>
+              <Link
+                className='nav-link h3 fw-bold'
+                to={{ pathname: '/cart' }}
+                onClick={changeActive}
+              >
                 Cart
               </Link>
             </li>
