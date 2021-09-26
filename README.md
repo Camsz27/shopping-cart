@@ -10,7 +10,7 @@ A shoe website where you can select and add to cart different products.
 
 ## Description
 
-The objective of this project was to keep practicing React and use for the first time React Router and Bootstrap.
+The objective of this project was to keep working with React and use for the first time React Router and Bootstrap.
 
 ## Built With
 
