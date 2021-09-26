@@ -10,13 +10,21 @@ import { useState } from 'react';
 function Routes() {
   const [cart, setCart] = useState([]);
 
-  const trial = (shoe) => {
-    console.log('here we are');
-    console.log(cart);
+  const addItemToCart = (shoe) => {
     setCart((prevState) => {
+      if (itemInCart(shoe)) {
+        return [...prevState];
+      }
       return [...prevState, shoe];
     });
-    console.log(cart);
+  };
+
+  const itemInCart = (shoe) => {
+    const result = cart.find((element) => element.name === shoe.name);
+    if (result) {
+      return true;
+    }
+    return false;
   };
 
   return (
@@ -24,10 +32,12 @@ function Routes() {
       <Header />
       <Switch>
         <Route path='/store/item/:id'>
-          <Item handler={trial} />
+          <Item handler={addItemToCart} />
         </Route>
         <Route path='/store' component={Store} />
-        <Route path='/cart' component={Cart} />
+        <Route path='/cart'>
+          <Cart cart={cart} />
+        </Route>
         <Route path='/' component={LandingPage} />
       </Switch>
     </BrowserRouter>

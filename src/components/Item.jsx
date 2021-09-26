@@ -15,6 +15,7 @@ const Item = ({ handler }) => {
   const shoe = findShoe()[0];
 
   const addToCartHandler = () => {
+    shoe.quantity += 1;
     handler(shoe);
   };
 

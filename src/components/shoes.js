@@ -12,6 +12,7 @@ const shoes = [
     price: 185,
     description:
       'Since 1985, Jordan Brand has always done things that have never been seen before. Almost forty years later, Jordan continues to bring new light to the game with international athletes that are redefining the blueprint once again. Beaming with talent, it’s about the shine within that makes the new faces of the game radiant on the court. Drawing inspiration from ultraviolet rays, the Air Jordan XXXVI "First Light" celebrates the future of Jordan, the ones who will brighten the way for the next generation of global superstars all across the world.',
+    quantity: 0,
   },
   {
     name: 'Air Jordan 1 Low',
@@ -19,6 +20,7 @@ const shoes = [
     price: 90,
     description:
       "Inspired by the original that debuted in 1985, the Air Jordan 1 Low offers a clean, classic look that's familiar yet always fresh. It's made for casual mode, with an iconic design that goes with everything and never goes out of style.",
+    quantity: 0,
   },
   {
     name: 'Air Jordan 1 Mid',
@@ -26,12 +28,14 @@ const shoes = [
     price: 120,
     description:
       'The Air Jordan 1 Mid Shoe is inspired by the first AJ1, offering fans of Jordan retros a chance to follow in the footsteps of greatness. Fresh color trims the clean, classic materials, injecting some newness into the familiar design.',
+    quantity: 0,
   },
   {
     name: 'Orange Blaze',
     img: shoe4,
     price: 190,
     description: `Featuring hues perfect for fall, the Air Jordan 5 "Orange Blaze" is ready to light up those crisp nights. A Sail leather upper mixes with textile mesh for a material mash-up, allowing that Orange Blaze midsole with speckled shark-teeth to breathe with a biting, bold look. And yes, it's literally ready to light up the night—flash a camera against these Air Jordan 5's and a familiar reflective tongue will shine back at you in the dark, leading the way forward.`,
+    quantity: 0,
   },
   {
     name: 'Jordan Point Lane',
@@ -39,6 +43,7 @@ const shoes = [
     price: 140,
     description:
       "The Jordan Point Lane mixes elements from game shoes MJ wore during 3 of his most memorable seasons. Named for his Chicago address, this mash-up pulls in bits and pieces from the AJ3, AJ6 and AJ11 to create a shoe that's inspired by greatness and uncompromising in its comfort.",
+    quantity: 0,
   },
   {
     name: 'Jordan Max Aura 3',
@@ -46,6 +51,7 @@ const shoes = [
     price: 120,
     description:
       "Get your piece of Jordan history and heritage in the Jordan Max Aura 3. Inspired by the brand's rich legacy of performance basketball, it has the energy of a game shoe and a design that puts a fresh spin on classic details.",
+    quantity: 0,
   },
 ];
 

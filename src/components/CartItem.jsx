@@ -1,28 +1,36 @@
-import React from 'react';
-import image from '../assets/shoes/shoe1.jpeg';
+import React, { useState } from 'react';
 
 const imageStyle = { width: '150px' };
 const select = { width: '30%', minWidth: '120px' };
 
-const CartItem = () => {
+const CartItem = ({ item, handler }) => {
+  const [price, setPrice] = useState(item.price * item.quantity);
+
+  const calculatePrice = (e) => {
+    item.quantity = e.target.value;
+    setPrice(item.quantity * item.price);
+    handler();
+  };
+
   return (
-    <div className='d-flex border-2 border flex-md-row flex-column px-3 px-md-0'>
+    <div className='d-flex border-2 border flex-lg-row flex-column px-3 px-md-0'>
       <div className='me-md-4 my-3 my-md-0'>
         <img
-          src={image}
+          src={item.img}
           style={imageStyle}
           alt='shoe'
           className='img-fluid rounded-start'
         />
       </div>
       <div className='d-flex flex-column align-items-center justify-content-center me-md-4'>
-        <h4>Air Jordan XXXVI "First Light"</h4>
+        <h4>{item.name}</h4>
         <select
           className='form-select form-select-m'
           id='quantity'
           style={select}
+          defaultValue={item.quantity}
+          onChange={calculatePrice}
         >
-          <option value=''>Quantity</option>
           <option value='0'>0</option>
           <option value='1'>1</option>
           <option value='2'>2</option>
@@ -36,8 +44,8 @@ const CartItem = () => {
           <option value='10'>10</option>
         </select>
       </div>
-      <div className='d-flex align-items-middle justify-content-center mx-5 mt-3 mt-md-0'>
-        <h5 className='align-self-center'>$120</h5>
+      <div className='d-flex align-items-middle justify-content-center mx-5 mt-3 mt-lg-0'>
+        <h5 className='align-self-center'>${price}</h5>
       </div>
     </div>
   );
