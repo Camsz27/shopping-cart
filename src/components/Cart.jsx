@@ -40,7 +40,12 @@ const Cart = ({ cart }) => {
           <h3>${total}</h3>
         </div>
         <div>
-          <button className='btn btn-dark btn-lg px-5'>Checkout</button>
+          <button
+            className='btn btn-dark btn-lg px-5'
+            onClick={() => alert('Checkout not implemented')}
+          >
+            Checkout
+          </button>
         </div>
       </div>
     </div>

@@ -4,6 +4,41 @@
   height: 89.5vh;
 }
 
-#navbarNav {
+#navbarSupportedContent {
   margin-left: -5.5rem;
+}
+
+#storeCard {
+  width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-device-width: 576px) {
+  .landingPage {
+    background-position: -10cm;
+  }
+}
+
+@media screen and (max-device-width: 768px) {
+  .landingPage {
+    background-position: -5cm;
+  }
+}
+
+@media screen and (min-device-width: 768px) {
+  #storeCard {
+    min-height: 32rem;
+  }
+}
+
+@media screen and (min-device-width: 1200px) {
+  #storeCard {
+    min-height: 35rem;
+  }
+}
+
+@media screen and (min-device-width: 1400px) {
+  #storeCard {
+    min-height: 36rem;
+  }
 }
