@@ -1,12 +1,12 @@
-# Memory Game
+# Shopping Cart
 
-A shoe website where you can select and add to cart different products.
+A shoe website where you can select and add to your cart different products.
 
 ## Live Demo
 
 [Click Here](https://camsz27.github.io/shopping-cart/)
 
-![Preview of the page](/src/preview.gif 'App preview')
+<img src="./src/preview.gif" width="900" alt="App preview"/>
 
 ## Description
 
