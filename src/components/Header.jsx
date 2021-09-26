@@ -26,11 +26,7 @@ export const Header = () => {
         <div className='collapse navbar-collapse ms-n6' id='navbarNav'>
           <ul className='navbar-nav mx-auto'>
             <li className='nav-item me-4'>
-              <Link
-                className='nav-link active h3 fw-bold'
-                aria-current='page'
-                to='/'
-              >
+              <Link className='nav-link h3 fw-bold' aria-current='page' to='/'>
                 Home
               </Link>
             </li>
@@ -40,7 +36,7 @@ export const Header = () => {
               </Link>
             </li>
             <li className='nav-item mx-4'>
-              <Link className='nav-link h3 fw-bold' to='/'>
+              <Link className='nav-link h3 fw-bold' to='/cart'>
                 Cart
               </Link>
             </li>

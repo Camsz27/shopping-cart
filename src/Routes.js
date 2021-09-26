@@ -3,6 +3,7 @@ import { LandingPage } from './components/LandingPage';
 import { Store } from './components/Store';
 import Item from './components/Item';
 import './Routes.css';
+import Cart from './components/Cart';
 
 function Routes() {
   return (
@@ -10,6 +11,7 @@ function Routes() {
       <Switch>
         <Route path='/store/item/:id' component={Item} />
         <Route path='/store' component={Store} />
+        <Route path='/cart' component={Cart} />
         <Route path='/' component={LandingPage} />
       </Switch>
     </BrowserRouter>
