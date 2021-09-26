@@ -41,7 +41,8 @@ const Item = () => {
                     id='quantity'
                     style={select}
                   >
-                    <option value='0'>Quantity</option>
+                    <option value=''>Quantity</option>
+                    <option value='0'>0</option>
                     <option value='1'>1</option>
                     <option value='2'>2</option>
                     <option value='3'>3</option>
