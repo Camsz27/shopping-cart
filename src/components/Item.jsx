@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from './Header';
-import { useParams } from 'react-router';
+import { useLocation, useParams } from 'react-router';
 import shoes from './shoes';
 
 const select = { width: '30%', minWidth: '120px' };
@@ -8,6 +8,7 @@ const shoeImage = { height: '600px' };
 
 const Item = () => {
   const { id } = useParams();
+  const location = useLocation();
 
   const findShoe = () => {
     const shoe = shoes.filter((shoe) => shoe.name === id);
@@ -15,6 +16,10 @@ const Item = () => {
   };
 
   const shoe = findShoe()[0];
+
+  const addToCartHandler = () => {
+    location.data(shoe);
+  };
 
   return (
     <div>
@@ -54,7 +59,9 @@ const Item = () => {
                     <option value='9'>9</option>
                     <option value='10'>10</option>
                   </select>
-                  <button className='btn btn-dark'>Add to cart</button>
+                  <button className='btn btn-dark' onClick={addToCartHandler}>
+                    Add to cart
+                  </button>
                 </div>
               </div>
             </div>

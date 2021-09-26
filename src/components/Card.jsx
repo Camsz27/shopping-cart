@@ -3,14 +3,17 @@ import { Link } from 'react-router-dom';
 
 const cardWidth = { width: '18rem', minHeight: '34rem' };
 
-const Card = ({ shoe }) => {
+const Card = ({ shoe, cart }) => {
   return (
     <div className='card border-3' style={cardWidth}>
       <img src={shoe.img} className='card-img-top img-fluid' alt={shoe.name} />
       <div className='card-body'>
         <h5 className='card-title ft-bold fs-2'>{shoe.name}</h5>
         <h6 className='card-subtitle mb-2 fw-bold fs-5'>${shoe.price}</h6>
-        <Link to={`/store/item/${shoe.name}`} className='btn btn-primary'>
+        <Link
+          to={{ pathname: `/store/item/${shoe.name}`, data: cart }}
+          className='btn btn-primary'
+        >
           More Info
         </Link>
       </div>
