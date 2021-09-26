@@ -36,7 +36,7 @@ export const Header = () => {
               </Link>
             </li>
             <li className='nav-item mx-4'>
-              <Link className='nav-link h3 fw-bold' to='/cart'>
+              <Link className='nav-link h3 fw-bold' to={{ pathname: '/cart' }}>
                 Cart
               </Link>
             </li>

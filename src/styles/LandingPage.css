@@ -1,8 +1,7 @@
 .landingPage {
   background: url('../assets/landing.jpg') no-repeat;
   background-size: cover;
-  background-position: left 2.2cm;
-  height: 100vh;
+  height: 89.5vh;
 }
 
 #navbarNav {
